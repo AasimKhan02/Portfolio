@@ -1,0 +1,85 @@
+.Skills {
+  min-width: 100%;
+  min-height: 170vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.Skills h1 {
+  width: 100%;
+  text-align: center;
+  color: #ffc300;
+  text-transform: uppercase;
+  font-family: "Bowlby One SC", sans-serif;
+  letter-spacing: 2px;
+  margin-top: 5vh;
+}
+
+.Skills .cards {
+  min-width: 100%;
+  min-height: 120vh;
+  margin-bottom: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 15vh;
+}
+
+.Skills .cards li {
+  width: 60vh;
+  height: 60vh;
+  border-radius: 30px;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vh;
+  font-size: 20px;
+  transition: all 1s ease-in-out;
+  position: relative;
+  cursor: pointer;
+}
+
+.Skills .cards img {
+  width: 15vh;
+  transition: 1s ease-in-out;
+  opacity: 1;
+}
+
+.Skills .cards li:hover img {
+  opacity: 0;
+}
+
+.Skills .cards li:hover {
+  background-color: white;
+}
+
+.Skills .cards li .hover-text {
+  position: absolute;
+  top: 10%;
+  opacity: 0;
+  transition: all 1s ease-in-out;
+  font-family: "Outfit", sans-serif;
+  min-width: 80%;
+  min-height: 70%;
+  text-align: center;
+  margin: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 25px;
+  gap: 1vh;
+  font-weight: bold;
+}
+
+.Skills .cards li:hover .hover-text {
+  opacity: 1;
+  color: black;
+}

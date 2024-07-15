@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+
+.items {
+    padding-left: 15vh;
+    padding-right: 11vh;
+}
+
+nav {
+    min-width: 100%;
+    background-color: #000814dd;
+    color: white;
+    padding: 4px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+    padding-top: 15px;
+    padding-bottom: 18px;
+}
+
+.logo {
+    font-size: 30px;
+    font-family: "Bowlby One SC", sans-serif;
+    letter-spacing: 2px;
+    color: #ffc300;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    list-style: none;
+    margin: 5px 25px;
+    font-size: 19px;
+    cursor: pointer;
+    position: relative;
+}
+
+nav ul li::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: -7px;
+    left: 50%;
+    background-color: white;
+    transition: width 0.7s ease, left 0.7s ease;
+}
+
+nav ul li:hover::before {
+    width: 100%;
+    left: 0;
+}
+
+.btn {
+    background-color: white;
+    color: black;
+    padding: 7px 20px;
+    font-size: 19px;
+    border-radius: 30px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    transition: 0.5s ease-in-out;
+    border: 2px solid black;
+    box-shadow: white 5px 5px 1px;
+}
+
+.btn:hover {
+    background-color: #ffc300;
+    box-shadow: #ffc300 5px 5px 1px;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon div {
+    width: 35px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.menu-icon.open .line1 {
+    transform: rotate(-45deg) translate(-5px, 5px);
+}
+
+.menu-icon.open .line2 {
+    opacity: 0;
+}
+
+.menu-icon.open .line3 {
+    transform: rotate(45deg) translate(-5px, -5px);
+}
+
+.nav-links.open {
+    transform: translateX(0);
+}
+
+.close-btn {
+    display: none;
+    background-color: transparent;
+    color: white;
+    font-size: 70px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    box-shadow: none;
+}
+
+.nav-links.open .close-btn {
+    display: block;
+}
+
+
+@media screen and (max-width: 1100px) {
+    nav ul li {
+        font-size: 18px;
+        margin: 5px 15px;
+    }
+    .items {
+        padding-left: 15vh;
+        padding-right: 5vh;
+    }
+    .btn {
+        padding: 7px 19px;
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .menu-icon {
+        display: flex;
+    }
+
+    nav ul {
+        position: absolute;
+        right: 0;
+        height: 100vh;
+        top: 0;
+        background-color: #011b42;
+        flex-direction: column;
+        align-items: center;
+        min-width: 100%;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+    }
+
+    nav ul li {
+        opacity: 1;
+        margin: 35px 0;
+        font-size: 25px;
+        position: relative;
+        top: 10vh;
+    }
+
+    .nav-links.open {
+        transform: translateX(0);
+    }
+    .btn {
+        position: relative;
+        top: 11vh;
+        padding: 15px 40px;
+        box-shadow: none;
+        font-size: 20px;
+    }
+    .btn:hover{
+        background-color: #ffc300;
+    }
+}
+@media screen and (min-width: 1000px){
+    .close-btn{
+        display: none;
+    }
+}
