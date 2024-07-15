@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap');
+.Home{
+    min-width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    text-align: center;
+    padding: 50px;
+}
+.Home h3{
+    font-size: 2.5rem;
+    color: white;
+    min-width: 100%;
+    text-align: center;
+}
+.Home h1{
+    color: #ffc300;
+    font-size: 7rem;
+    font-family: "Bowlby One SC", sans-serif;
+    letter-spacing: 5px;
+    font-weight: 300;
+}
+.profession {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 32px;
+    font-weight: bolder;
+    height: 60px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    min-width: 25rem;
+    background-color: #ffc300;
+    letter-spacing: 1px;
+}
+
+.profession-item {
+    transition: opacity 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1050px){
+    .Home h3{
+        font-size: 1.5rem;
+    }
+    .Home h1{
+        font-size: 5rem;
+    }
+}
