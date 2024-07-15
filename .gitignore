@@ -95,8 +95,6 @@ dist/
 # Store VS Code sessions
 .vscode/
 
-# Nuxt generate
-dist
 
 # Storybook
 .out/
