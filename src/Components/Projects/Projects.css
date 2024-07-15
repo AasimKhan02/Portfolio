@@ -110,7 +110,7 @@
 .sidebar {
     position: fixed;
     top: 0;
-    right: -70%; 
+    right: -170%; 
     width: 100vh;
     height: 100%;
     background-color: #00132f;
